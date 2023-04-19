@@ -2,11 +2,11 @@ const pokeApi = {};
 
 function convertPokemonApiDetailToPokemon(pokeDetail) {
   const pokemon = new Pokemon();
-  pokemon.number = pokeDetail.order;
-  pokemon.name = pokeDetail.name;
-
   const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
   const [type] = types;
+  
+  pokemon.number = pokeDetail.order;
+  pokemon.name = pokeDetail.name;
   pokemon.types = types;
   pokemon.type = type;
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
