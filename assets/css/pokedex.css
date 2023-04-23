@@ -19,7 +19,7 @@
   .water{
     background-color: #678fee;
   } 
-  .eletric{
+  .electric {
     background-color: #f7cf2e;
   } 
   .ice{
@@ -105,8 +105,8 @@
   font-size: 0.625rem;
   margin: 0.25rem 0;
   border-radius: 1rem;
-  filter: brightness(1.1);
   text-align: center;
+  filter: brightness(1.1);
 }
 
 .pokemon .detail img {
