@@ -4,13 +4,15 @@ function convertPokemonApiDetailToPokemon(pokeDetail) {
   const pokemon = new Pokemon();
   const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
   const [type] = types;
-  
+
+  const detailStatus = pokeDetail.stats.map((detailStatus) => ` ${detailStatus.stat.name } - ${detailStatus.base_stat}`);
   pokemon.number = pokeDetail.id;
   pokemon.name = pokeDetail.name;
+  pokemon.detailStatus = detailStatus;
   pokemon.types = types;
   pokemon.type = type;
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
-
+  
   return pokemon;
 }
 

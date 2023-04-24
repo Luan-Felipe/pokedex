@@ -99,6 +99,14 @@
   list-style: none;
 }
 
+.pokemon .detail .statsDetail {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.625rem;
+  color: #fff;
+}
+
 .pokemon .detail .types .type {
   color: #fff;
   padding: 0.25rem 0.5rem;
